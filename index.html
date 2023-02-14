@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <!-- will be overwritten by React -->
+      <!-- <h1 id="title">Hello World</h1> -->
+      <h1 id="title">Not Rendered</h1>
+    </div>
+    <!-- Bundlers: vite, parcel(in this course), webpack(default) -->
+
+    <!-- order of file matters -->
+    <!-- cdn is not the good way, because maintainer is difficult if react version changes we have to replace it with latest version  -->
+    <!-- Plus the package our also on other servers, whereas with npm there are in node_modules on local server -->
+    <!-- <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script> -->
+
+    <!-- add type module because browser dont understand import keyword used in app.js -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
+
+<!-- Never put package-lock.json in .gitignore  -->
+<!-- package-lock.json locks exact version of package   -->
